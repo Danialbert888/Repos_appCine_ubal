@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+  <table >
+
+    <tr>
+      <th >id estado</th>
+      <th >desc estado</th>
+    </tr>
+
+
+    <tr th:each="Estado : ${estados}" >
+      <td th:text="${Estado.IdEstado}"></td>
+      <td th:text="${Estado.DescEstado}"></td>
+    </tr>
+
+  </table>
+</div>
+
+</body>
+</html>
